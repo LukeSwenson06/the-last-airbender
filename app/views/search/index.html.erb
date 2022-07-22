@@ -2,12 +2,12 @@
   <h2><p> Member Name: <%= member.name  %></p></h2>
   <h3><p><img src="<%= member.photo  %>"alt="character picture"></p></h3>
     <% if member.allies.blank? %>
-      <b><%= "None" %></b>
+      <h3> Allies: "None" </h3>
     <% else %>
       <h3><p>Allies: <%= member.allies  %></p></h3>
     <% end %>
     <% if member.enemies.blank? %>
-      <b><%= "None" %></b>
+      <h3>Enemies: None</h3>
     <% else %>
       <h3><p>Eneimes: <%= member.enemies   %></p></h3>
     <% end %>
