@@ -20,7 +20,7 @@ RSpec.describe Avatar do
     expect(avatar).to be_a Avatar
     expect(avatar.allies).to eq(["Ty Lee"])
     expect(avatar.enemies).to eq(["Appa"])
-    expect(avatar.photoUrl).to eq("https://vignette.wikia.nocookie.net/avatar/images/a/a5/Circus_master.png/revision/latest?cb=20130706153819")
+    expect(avatar.photo).to eq("https://vignette.wikia.nocookie.net/avatar/images/a/a5/Circus_master.png/revision/latest?cb=20130706153819")
     expect(avatar.name).to eq("Circus master")
     expect(avatar.affiliation).to eq("Fire Nation circus")
 
