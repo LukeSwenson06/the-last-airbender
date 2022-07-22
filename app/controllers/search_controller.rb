@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
   def index
-    @nation_members = AvatarFacade.nation_members(params[:nation])
-    binding.pry
+    search = params[:nation].gsub('_','+')
+    @nation_members = AvatarFacade.nation_members(search)
   end
 end

@@ -1,1 +1,15 @@
-THis is AVATAR!!!
+<%= @nation_members.each do |member| %>
+  <h2><p> Member Name: <%= member.name  %></p></h2>
+  <h3><p><img src="<%= member.photo  %>"alt="character picture"></p></h3>
+    <% if member.allies.blank? %>
+      <b><%= "None" %></b>
+    <% else %>
+      <h3><p>Allies: <%= member.allies  %></p></h3>
+    <% end %>
+    <% if member.enemies.blank? %>
+      <b><%= "None" %></b>
+    <% else %>
+      <h3><p>Eneimes: <%= member.enemies   %></p></h3>
+    <% end %>
+  <h3><p>Affilation:<%= member.affiliation  %></p></h3>
+<% end %>
